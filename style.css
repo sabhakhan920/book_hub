@@ -1,0 +1,599 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    
+}
+.nav-bar {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e78e0a; 
+  padding: 3px 3px;
+  border-radius: 10px;
+  width: 100%; 
+  height: 100%; 
+}
+.main-text p {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 15px;
+  margin: 10px;
+}
+body {
+  margin: 0; /* Remove default margin */
+}
+
+.overlay {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  height: 100vh; /* Full viewport height */
+  background-size: cover; /* Cover the entire area with the background image */
+  background-position: center; /* Center the background image */
+}
+
+.aboutBox {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+  padding: 40px; /* Increased padding around the box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  text-align: center; /* Center text inside the box */
+  max-width: 1000px; /* Wider maximum width for the about box */
+  width: 90%; /* Full width with a max constraint */
+}
+
+.aboutBox h1, 
+.aboutBox h2 {
+  color: #fff; /* White text color for all headings */
+  padding: 10px; /* Padding around headings */
+  border-radius: 5px; /* Slightly rounded corners for headings */
+  margin: 15px 0; /* Margin above and below the headings */
+}
+
+.aboutBox p {
+  color: #fff; /* White text color for paragraphs */
+  margin: 15px 0; /* Margin above and below paragraphs */
+  line-height: 1.6; /* Line height for better readability */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #333; 
+    padding: 10px 20px; 
+}
+
+.navbar-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; 
+}
+
+.navbar-links {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+}
+
+.navbar-links li {
+    margin: 0 15px; /* Spacing between links */
+}
+
+.navbar-links a {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.navbar-links a:hover {
+    color:darkgoldenrod; 
+}
+
+/* Navbar Tools */
+.navbar-tools {
+    display: flex;
+    align-items: center; 
+}
+
+.search-form {
+    display: flex; 
+}
+
+.search-input {
+    padding: 5px; 
+    border: none;
+    border-radius: 5px 0 0 5px; 
+}
+
+.search-button {
+    padding: 5px 10px;
+    border: none; 
+    border-radius: 0 5px 5px 0; 
+    background-color: #e78e0a; 
+    color: white; /* Button text color */
+    cursor: pointer; 
+}
+
+.cart-icon {
+    margin-left: 20px; 
+    color: white; 
+    font-size: 24px; 
+    text-decoration: none; 
+}
+
+.cart-icon:hover {
+    color:#e78e0a; /* Change color on hover */
+}
+
+.overlay {
+  position: relative; 
+  padding-top: 70px; 
+  min-height: 100vh;
+  width:auto;
+}
+
+.centered {
+  text-align: center;
+}
+
+header {
+    background-color: rgb(21, 21, 21);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 25px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    background: url('cover\ img.jpeg') center/cover no-repeat;
+    color: white;
+}
+
+.hero-section .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h2 {
+    font-size: 4em;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.cta-button {
+    background-color: rgb(21, 21, 21);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: rgb(52, 52, 51);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.heromsg{
+    height: 50px;
+    width:auto;
+    color:white;
+    background-color:darkgoldenrod;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* General Book Section Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url(back\ 9.avif) 
+
+  }
+  
+  /* Books Section Container */
+  .books-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+    
+  }
+  
+  .books-section h2 {
+    text-align: center;
+    font-size: 28px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+  }
+  
+  /* Book Grid */
+  .book-grid {
+    display: grid;
+        grid-template-columns: repeat(3, 1fr); /* displays three books in a row */
+        gap: 20px; /* gap between the images*/
+  }
+  
+/* Book Item */
+.book-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    text-align: center;
+
+  }
+  
+  .book-item img {
+    width: 90%; 
+    height: auto; 
+    border-radius: 8px; 
+    object-fit: cover; 
+  }
+  
+  
+  .book-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .book-item p {
+    color: #777;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .book-item {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .book-item {
+      flex-basis: 100%;
+    }
+  }
+
+/* reg form */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0e0e0;
+  transition: background-color 0.5s ease-in-out;
+}
+
+
+.profile-section {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color:  rgba(186, 172, 153, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.profile-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.profile-section h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.profile-section label {
+  display: block;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  text-align: left;
+ 
+  margin: 10px 5px 5px; /* Space around labels */
+  font-size: 16px; /* Font size for labels */
+  color: #585454; /* Label color */
+  
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-section input {
+ 
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 90%; /* Full width for inputs */
+  padding: 12px; /* Padding inside inputs */
+  margin-bottom: 10px; /* Space below inputs */
+  border: 1px solid #ccc; /* Border for inputs */
+  border-radius: 5px; /* Rounded corners for inputs */
+  font-size: 14px; /* Font size for inputs */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transition for focus effect */
+}
+
+.profile-section input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+.profile-section button {
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.profile-section button:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+#toggleForm {
+  margin-top: 10px;
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+#toggleForm:hover {
+  color: #0056b3;
+}
+
+
+/* Heading for requesting a book */
+.request-book-heading {
+  text-align: center; /* Center the heading text */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #f4f4f4;
+}
+
+.contact-section {
+  max-width :400px; ;/* Set max width for form */
+  width:100 ;/* Full width up to max */
+  padding:10px; /* Padding inside the form */
+  margin: 40px 400px 50px;
+  background-color: rgba(186, 172, 153, 0.9); /* Slightly transparent background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+
+}
+.contact-section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.request-book-heading {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-10px); /* Slightly moved up */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for opacity and position */
+}
+
+.request-book-heading.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Move back to original position */
+}
+
+/* Input and Textarea Styles */
+.contact-section label {
+  display: block; /* Block display for labels */
+  margin: 10px 5px 5px; /* Space around labels */
+  font-size: 16px; /* Font size for labels */
+  color: #585454; /* Label color */
+  text-align: left; /* Align text to the left */
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+.contact-section input, .contact-section textarea {
+  width: 90%; /* Full width for inputs */
+  padding: 12px; /* Padding inside inputs */
+  margin-bottom: 10px; /* Space below inputs */
+  border: 1px solid #ccc; /* Border for inputs */
+  border-radius: 5px; /* Rounded corners for inputs */
+  font-size: 14px; /* Font size for inputs */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transition for focus effect */
+}
+
+/* Focus effects for inputs and textareas */
+.contact-section input:focus, .contact-section textarea:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Glow effect on focus */
+}
+
+/* Button Styling */
+.contact-section button {
+  width: 100%; /* Full width for button */
+  padding: 12px; /* Padding inside button */
+  background-color: #333; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners for button */
+  font-size: 16px; /* Font size for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Transition for hover effect */
+}
+
+/* Button hover effects */
+.contact-section button:hover {
+  background-color: #555; /* Change background color on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+
+/* General Footer Styling */
+
+  footer {
+    background-color:black;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  .footer-container > div {
+    flex-basis: 22%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-about, .footer-contact, .footer-links, .footer-social {
+    max-width: 250px;
+  }
+  
+  h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  p, ul {
+    color: #ccc;
+    margin: 0 0 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .footer-social a {
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
+  .footer-social img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+    transition: transform 0.3s;
+  }
+  
+  .footer-social a:hover img {
+    transform: scale(1.1);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #9b9292;
+    padding-top: 15px;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    color: #777;
+    font-size: 12px;
+    margin: 0;
+  }
+ 
+ /* Styling for error inputs */
+.error {
+  border: 1px solid #dc3545; /* Bootstrap's red error color */
+  border-radius: 4px;
+}
+
+/* Styling for inline error messages */
+.error-message {
+  color: #dc3545;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 4px;
+}
+
+/* Warning icon styling */
+.error-message::before {
+  content: "⚠️"; /* Unicode warning symbol */
+  font-size: 1em;
+}
+
+
+
+  

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Hub</title>
+    <link rel="stylesheet" href="style.css"> <!-- link to the css style sheet-->
+    <script src="profile.js"></script>  <!-- link to the js script-->
+
+</head>
+<body>
+    <header>
+        <h1>📚 The Book Hub</h1>
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">SignUp/Login</a></li>
+
+            </ul>
+            <div class="navbar-tools">
+                <form class="search-form">
+                    <input type="text" placeholder="Search books..." class="search-input">
+                    <button type="submit" class="search-button">🔍</button>
+                </form>
+                <a href="#" class="cart-icon">🛒</a>
+            </div>
+        </nav>
+    </header>
+
+<section id="profile" class="profile-section">
+    <div class="form-container">
+        <h2 id="formTitle">Sign Up</h2>
+        <form id="authForm" onsubmit="return validateForm()">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            
+            <div id="confirmPasswordContainer">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" required>
+            </div>
+
+            <button type="submit" id="formSubmitButton">Sign Up</button>
+        </form>
+        <p id="toggleForm" onclick="toggleForm()">Already have an account? Login here.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-about">
+            <h4>About Us</h4>
+            <p>Welcome to Book Hub, your number one source for all kinds of books. We're dedicated to giving you the very best of literature, with a focus on variety, quality, and customer satisfaction.</p>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Address: 123 Book hub, sector A, Islamabad</p>
+            <p>Email: support@bookhub.com</p>
+            <p>Phone: +92 34563789</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <p>For complaints and feedback</p>
+            <a href="#"><img src="fb.png" alt="Facebook"></a>
+            <a href="#"><img src="insta.jfif" alt="Instagram"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Book Hub. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
